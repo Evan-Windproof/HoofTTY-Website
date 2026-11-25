@@ -5,7 +5,9 @@ HoofTTY is an experimental pony-themed text-mode operating system.
 - [Visit the official website](https://evanwindproof.top/projects/hooftty/)
 - [Explore the operating system source and releases](https://github.com/Evan-Windproof/HoofTTY)
 
-This repository contains a copy of the static page and assets deployed from [Evan-Windproof.github.io at 005130b](https://github.com/Evan-Windproof/Evan-Windproof.github.io/tree/005130bf54ddf312f7ebe5ae8588188193c796e1/projects/hooftty). The main website repository publishes the live page through GitHub Pages. Update the main website repository to publish changes, then sync the page files here.
+This repository mirrors the static page and assets from [Evan-Windproof.github.io](https://github.com/Evan-Windproof/Evan-Windproof.github.io/tree/main/projects/hooftty). The main website publishes the live page through GitHub Pages. Make page changes in the main website repository. The `.hooftty-source` file records the authoritative commit used for this copy.
+
+See the main website’s [synchronization and maintenance guide](https://github.com/Evan-Windproof/Evan-Windproof.github.io/blob/main/docs/HOOFTTY.md) for the workflow, required permissions and manual sync procedure.
 
 ## Local preview
 
