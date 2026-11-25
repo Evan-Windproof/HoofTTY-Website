@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HoofTTY — A Pony-Themed Text-Mode Operating System</title>
+  <meta name="description" content="Explore HoofTTY, an experimental pony-themed text-mode operating system. Download releases, read the documentation, and try it in QEMU.">
+  <link rel="canonical" href="https://evanwindproof.top/projects/hooftty/">
+  <meta property="og:title" content="HoofTTY — A Pony-Themed Text-Mode Operating System">
+  <meta property="og:description" content="Explore HoofTTY, an experimental x86-64 hobby OS with a pony-themed framebuffer terminal and interactive shell.">
+  <meta property="og:url" content="https://evanwindproof.top/projects/hooftty/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Evan Windproof">
+  <link rel="icon" type="image/png" href="./evan.png">
+  <link rel="stylesheet" href="./hooftty.css">
+</head>
+<body id="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home"><span aria-hidden="true">❯</span> HoofTTY</a>
+    <span class="site-name">// Official Website</span>
+    <nav class="brackets" aria-label="HoofTTY">
+      <a href="#home">Home</a>
+      <a href="#download">Download</a>
+      <a href="#docs">Docs</a>
+      <a href="#changelog">Changelog</a>
+      <a href="#status">Status</a>
+      <a href="https://github.com/Evan-Windproof/HoofTTY">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title"><span aria-hidden="true">&gt;_</span> HoofTTY</h1>
+        <p class="subtitle">A pony-themed text-mode operating system.</p>
+        <p class="intro">HoofTTY is an experimental hobby operating system with a retro text-mode interface and a pony theme, built for fun, learning, and exploration.</p>
+        <div class="actions brackets">
+          <a class="primary" href="https://github.com/Evan-Windproof/HoofTTY/releases/latest">Download Latest Release</a>
+          <a href="#docs">Documentation</a>
+          <a href="https://github.com/Evan-Windproof/HoofTTY">GitHub ↗</a>
+        </div>
+      </div>
+      <figure class="terminal">
+        <figcaption><span><span class="cyan" aria-hidden="true">□</span> HoofTTY OS</span><span>Boot preview</span></figcaption>
+        <div class="terminal-screen">
+          <div>
+            <div class="green">HoofTTY OS - Beta0.3.0</div>
+            <div class="terminal-welcome">
+              <div class="cyan">Welcome to HoofTTY!</div>
+              <div>A pony-themed text operating system.</div>
+              <div class="muted">Display: 1024x768x32</div>
+            </div>
+            <div>HoofTTY Shell: type friendship</div>
+            <div>hoof&gt; <span class="cursor" aria-hidden="true"></span></div>
+          </div>
+          <img src="./evan.png" width="48" height="54" alt="Evan, the original HoofTTY pixel pony">
+        </div>
+      </figure>
+    </section>
+
+    <h2 class="divider">HoofTTY at a Glance</h2>
+    <div class="overview">
+      <section class="panel" aria-labelledby="features-title">
+        <h3 id="features-title"><span aria-hidden="true">[★]</span> Features</h3>
+        <ul class="feature-list">
+          <li>16-color framebuffer text terminal</li>
+          <li>Four selectable boot resolutions</li>
+          <li>Interactive shell with line editing and a visible cursor</li>
+          <li>Shutdown in supported QEMU PC configurations</li>
+          <li>Original pixel pony at startup</li>
+        </ul>
+      </section>
+      <section class="panel" aria-labelledby="release-title">
+        <h3 id="release-title"><span aria-hidden="true">[↓]</span> Download</h3>
+        <p>Try HoofTTY in QEMU with the x86-64 boot ISO.</p>
+        <a class="release" href="https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0"><span>Featured release</span><strong>Beta 0.4.0 ↗</strong></a>
+        <ul class="link-list"><li><a href="#download">ISO and QEMU setup</a></li><li><a href="#changelog">Release notes</a></li></ul>
+      </section>
+      <section class="panel" aria-labelledby="docs-title">
+        <h3 id="docs-title"><span aria-hidden="true">[▤]</span> Documentation</h3>
+        <p>Boot the system, explore its shell, or build it from source.</p>
+        <ul class="link-list">
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#user-guide">User Guide</a></li>
+          <li><a href="#commands">Commands Reference</a></li>
+          <li><a href="#developer-guide">Build from Source</a></li>
+          <li><a href="https://github.com/Evan-Windproof/HoofTTY/blob/beta0.4.0/docs/architecture.md">Architecture</a></li>
+        </ul>
+      </section>
+      <section class="panel" id="status" aria-labelledby="status-title">
+        <h3 id="status-title"><span aria-hidden="true">[↗]</span> Project Status</h3>
+        <dl>
+          <dt>Project</dt><dd>HoofTTY</dd>
+          <dt>Stage</dt><dd class="green">Experimental beta</dd>
+          <dt>Type</dt><dd>x86-64 hobby OS</dd>
+          <dt>Version</dt><dd><a href="#latest-release">Beta 0.4.0</a></dd>
+          <dt>License</dt><dd><a href="https://github.com/Evan-Windproof/HoofTTY/blob/beta0.4.0/LICENSE">GPL-3.0-or-later</a></dd>
+          <dt>Source</dt><dd><a href="https://github.com/Evan-Windproof/HoofTTY">Public repository</a></dd>
+        </dl>
+      </section>
+    </div>
+
+    <section aria-labelledby="about-title">
+      <h2 class="divider" id="about-title">About HoofTTY</h2>
+      <div class="about">
+        <img src="./evan.png" width="48" height="54" alt="">
+        <p>HoofTTY explores how much personality a small operating system can convey through text, color, and a pixel mascot. It builds on the educational x86-64 monolithic kernel from <a href="https://github.com/Evan-Windproof/Kernseed_OS">Kernseed OS</a> Phase 7 and keeps the shell at the center of the experience. It’s a fan-made project for learning kernel development, system programming, and low-level tools.</p>
+      </div>
+    </section>
+
+    <section id="download" class="details" aria-labelledby="download-title">
+      <h2 class="divider" id="download-title">Download</h2>
+      <div class="panel detail-panel">
+        <h3 id="latest-release">Beta 0.4.0 <small>· <time datetime="2026-11-18">18 Nov 2026</time></small></h3>
+        <p>HoofTTY is experimental. Use a VM and keep important data outside it.</p>
+        <div class="actions brackets">
+          <a class="primary" href="https://github.com/Evan-Windproof/HoofTTY/releases/latest">Latest release on GitHub</a>
+          <a href="https://github.com/Evan-Windproof/HoofTTY/releases/download/beta0.4.0/hooftty.iso">Beta 0.4.0 ISO (x86-64)</a>
+          <a href="https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0">Release notes</a>
+        </div>
+        <h4 id="getting-started">Getting Started</h4>
+        <p>Install QEMU with x86-64 system emulation. In the folder where you saved <code>hooftty.iso</code>, run:</p>
+        <pre><code>qemu-system-x86_64 -m 128M -vga std -nic none -cdrom hooftty.iso -boot d</code></pre>
+        <p>Choose a mode in the Limine boot menu. The default is 800×600.</p>
+      </div>
+    </section>
+
+    <section id="docs" class="details" aria-labelledby="docs-heading">
+      <h2 class="divider" id="docs-heading">Documentation</h2>
+      <div class="doc-grid">
+        <section class="panel detail-panel" id="user-guide">
+          <h3>User Guide</h3>
+          <p>At the <code>hoof&gt;</code> prompt, type a command and press Enter. The green underline marks the input position. Type <code>friendship</code> to list commands or <code>friendship colors</code> for help with <code>colors</code>. Use <code>shutdown</code> to power off the supported QEMU PC guest.</p>
+          <p>Choose 640×480, 800×600, 1024×768, or 1280×720 at boot. The terminal uses fixed-size ASCII bitmap glyphs and supports 16 foreground colors.</p>
+        </section>
+        <section class="panel detail-panel" id="developer-guide">
+          <h3>Developer Guide</h3>
+          <p>Use Linux or WSL with GCC, GNU binutils, GNU Make, Python 3, Git, xorriso, and QEMU. The first build fetches a pinned Limine revision and checks its hashes.</p>
+          <pre><code>git clone https://github.com/Evan-Windproof/HoofTTY.git
+cd HoofTTY
+git checkout beta0.4.0
+make iso
+make run</code></pre>
+          <p>The build writes <code>build/kernseed.iso</code>. Run <code>make test-host</code> for host unit tests and <code>make check</code> for ELF checks.</p>
+          <ul class="link-list">
+            <li><a href="https://github.com/Evan-Windproof/HoofTTY/blob/beta0.4.0/README.md#project-layout">Source layout and build docs</a></li>
+            <li><a href="https://github.com/Evan-Windproof/HoofTTY/blob/beta0.4.0/docs/shell-development.md">Shell development</a></li>
+            <li><a href="https://github.com/Evan-Windproof/HoofTTY/issues">Report a bug or share QEMU logs</a></li>
+          </ul>
+        </section>
+      </div>
+      <section class="panel detail-panel command-panel" id="commands">
+        <h3>Command Reference</h3>
+        <p>Commands are case-sensitive. The list below follows the <a href="https://github.com/Evan-Windproof/HoofTTY/tree/beta0.4.0/shell/commands">Beta 0.4.0 command registry</a>.</p>
+        <table>
+          <thead><tr><th scope="col">Command</th><th scope="col">Purpose</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>about</code></th><td>Show system information.</td></tr>
+            <tr><th scope="row"><code>apps</code></th><td>List embedded applications.</td></tr>
+            <tr><th scope="row"><code>colors</code></th><td>Display the 16 foreground colors.</td></tr>
+            <tr><th scope="row"><code>echo [text ...]</code></th><td>Print up to seven parsed arguments.</td></tr>
+            <tr><th scope="row"><code>friendship [command]</code></th><td>List commands or show help for one command.</td></tr>
+            <tr><th scope="row"><code>meminfo</code></th><td>Show physical-memory statistics.</td></tr>
+            <tr><th scope="row"><code>party</code></th><td>Print a Pinkie Pie–themed message.</td></tr>
+            <tr><th scope="row"><code>rainboom</code></th><td>Clear the terminal.</td></tr>
+            <tr><th scope="row"><code>reboot</code></th><td>Request a PC reset via the i8042 controller.</td></tr>
+            <tr><th scope="row"><code>run name</code></th><td>Run an embedded Ring 3 application, such as <code>run hello</code>.</td></tr>
+            <tr><th scope="row"><code>shutdown</code></th><td>Power off a supported QEMU PC guest.</td></tr>
+            <tr><th scope="row"><code>tasks</code></th><td>Show kernel task states and runtime counters.</td></tr>
+            <tr><th scope="row"><code>uptime</code></th><td>Show elapsed PIT ticks and estimated seconds.</td></tr>
+            <tr><th scope="row"><code>yay</code></th><td>Print a Fluttershy-inspired cheer.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section id="changelog" class="details" aria-labelledby="changelog-title">
+      <h2 class="divider" id="changelog-title">Changelog</h2>
+      <div class="panel detail-panel history">
+        <article>
+          <h3><a href="https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0">Beta 0.4.0</a> <small>· <time datetime="2026-11-18">18 Nov 2026</time></small></h3>
+          <p>Added the input cursor, four Limine boot resolutions, automatic horizontal placement of the boot sprite, and QEMU PC shutdown.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/Evan-Windproof/HoofTTY/releases/tag/color">Beta 0.3.0</a> <small>· <time datetime="2026-11-15">15 Nov 2026</time></small></h3>
+          <p>The <code>color</code> release page includes a screenshot and boot ISO.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/Evan-Windproof/HoofTTY/releases/tag/first">Beta 0.1.0</a> <small>· <time datetime="2026-11-14">14 Nov 2026</time></small></h3>
+          <p>The first public beta includes a screenshot and the <code>kernseed.iso</code> boot image.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong class="green">HoofTTY</strong> <span>// A pony-themed text-mode operating system</span></div>
+    <nav class="brackets" aria-label="Project resources">
+      <a href="https://github.com/Evan-Windproof/HoofTTY">GitHub ↗</a>
+      <a href="https://github.com/Evan-Windproof/HoofTTY/blob/beta0.4.0/LICENSE">GPL-3.0-or-later</a>
+      <a href="/">Evan Windproof</a>
+      <a href="mailto:evan.windproof@tutanota.de">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
